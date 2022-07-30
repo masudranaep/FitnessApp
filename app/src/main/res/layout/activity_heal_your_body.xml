@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundc"
+    android:orientation="vertical"
+    tools:context="com.fitplace.fitnessapp.Neutrition.HealYour.HealYourBody">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="57dp"
+        android:background="#816A6868">
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/backpassweight"
+                    android:onClick="Backpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icback_24"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="18dp"
+                    app:tint="@color/white" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="1dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FOODS HEAL YOUR BODY"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent">
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="203dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="fill_parent"
+                            android:layout_height="170dp"
+                            android:onClick="LogerHair"
+                            app:cardBackgroundColor="#283370"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="110dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/lognhear" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="110dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="29dp"
+                                    android:fontFamily="serif"
+                                    android:text="Longer Hair"
+
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="203dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="fill_parent"
+                            android:layout_height="170dp"
+                            android:onClick="Nails"
+                            app:cardBackgroundColor="#283370"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="110dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/nails" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="110dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="59dp"
+                                    android:fontFamily="serif"
+                                    android:text="Nails"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="203dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="fill_parent"
+                            android:layout_height="170dp"
+                            android:onClick="skingcare"
+                            app:cardBackgroundColor="#283370"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="110dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/skincare" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="110dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="44dp"
+                                    android:fontFamily="serif"
+                                    android:text="Skin Care"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="203dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <androidx.cardview.widget.CardView
+
+                            android:layout_width="fill_parent"
+                            android:layout_height="170dp"
+                            android:onClick="Indigestion"
+                            app:cardBackgroundColor="#283370"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="110dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/indgestion" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="110dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="39dp"
+                                    android:fontFamily="serif"
+                                    android:text="Indigestion"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp">
+
+
+                        <com.google.android.ads.nativetemplates.TemplateView
+                            android:id="@+id/my_template"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:gnt_template_type="@layout/gnt_small_template_view" />
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="203dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="fill_parent"
+                            android:layout_height="170dp"
+                            android:onClick="Asthma"
+                            app:cardBackgroundColor="#283370"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="110dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/asthma" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="110dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="58dp"
+                                    android:fontFamily="serif"
+                                    android:text="Asthma"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="203dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="fill_parent"
+                            android:layout_height="170dp"
+                            android:onClick="Depressinn"
+                            app:cardBackgroundColor="#283370"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="110dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/depresion2" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="110dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="49dp"
+                                    android:fontFamily="serif"
+                                    android:text="Depression"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="203dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/oneroutine"
+                            android:layout_width="fill_parent"
+                            android:layout_height="170dp"
+                            android:onClick="Headache"
+                            app:cardBackgroundColor="#283370"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="110dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/headeche" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="110dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="40dp"
+                                    android:fontFamily="serif"
+                                    android:text="Headache"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="203dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/artichoke"
+                            android:layout_width="fill_parent"
+                            android:layout_height="170dp"
+                            android:onClick="highbp"
+                            app:cardBackgroundColor="#283370"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="110dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/highbp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="110dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="50dp"
+                                    android:fontFamily="serif"
+                                    android:text="High B.P."
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="203dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/bamboo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="170dp"
+                            android:onClick="KidneyDetox"
+                            app:cardBackgroundColor="#283370"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="110dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/kidneydetox" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="110dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="35dp"
+                                    android:fontFamily="serif"
+                                    android:text="Kidney Detox"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="203dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/tworoutine"
+                            android:layout_width="fill_parent"
+                            android:layout_height="170dp"
+                            android:onClick="kideneystone"
+                            app:cardBackgroundColor="#283370"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="110dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/kidneystone" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="110dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="30dp"
+                                    android:fontFamily="serif"
+                                    android:text="Kidney Stone"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginBottom="80dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="203dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="fill_parent"
+                            android:layout_height="170dp"
+                            android:onClick="MemoryLoss"
+                            app:cardBackgroundColor="#283370"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="110dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/lossmemory" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="110dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="29dp"
+                                    android:fontFamily="serif"
+                                    android:text="Memory Loss"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="203dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="fill_parent"
+                            android:layout_height="170dp"
+                            android:onClick="Ulcer"
+                            app:cardBackgroundColor="#283370"
+                            app:cardCornerRadius="20dp"
+                            app:cardElevation="2dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="110dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:src="@drawable/ulcer" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="110dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="55dp"
+                                    android:fontFamily="serif"
+                                    android:text="Ulcer"
+                                    android:textColor="@color/white"
+                                    android:textSize="20dp"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-6814304072623948/2822491961">
+
+            </com.google.android.gms.ads.AdView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

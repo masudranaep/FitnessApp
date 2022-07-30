@@ -1,0 +1,79 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    signingConfigs {
+        relese {
+            storeFile file('C:\\Users\\USER\\androidappfit.jks')
+            storePassword '12341234'
+            keyAlias 'key0'
+            keyPassword '12341234'
+        }
+    }
+    compileSdk 31
+
+    buildFeatures{
+        viewBinding true
+    }
+
+
+    defaultConfig {
+        applicationId "com.fitplace.fitnessapp"
+        minSdk 21
+        targetSdk 31
+        versionCode 3
+        versionName "2.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.relese
+
+        }
+
+
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation project(path: ':nativetemplates')
+    implementation 'androidx.navigation:navigation-fragment:2.4.2'
+    implementation 'androidx.navigation:navigation-ui:2.4.2'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.17'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation 'com.google.android.gms:play-services-ads:21.0.0'
+
+    implementation project(':nativetemplates')
+
+    implementation 'com.google.android.gms:play-services-location:20.0.0'
+    implementation  'com.google.android.gms:play-services-maps:18.0.2'
+    implementation 'com.karumi:dexter:6.2.3'
+
+
+
+}

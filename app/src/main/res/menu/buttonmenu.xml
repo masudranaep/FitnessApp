@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homefragment"
+        android:iconTint="#63A211"
+        android:icon="@drawable/ic_widgets"
+        android:title="Home" />
+
+
+    <item
+        android:id="@+id/rankfragment"
+        android:icon="@drawable/online_prediction_24"
+        android:iconTint="@color/teal_700"
+        android:title="Online"/>
+
+
+    <item
+        android:id="@+id/workoutfragment"
+        android:icon="@drawable/fmloseweight"
+        android:iconTint="@color/teal_700"
+        android:title="Home Workout" />
+
+    <item
+        android:id="@+id/profilefragment"
+        android:icon="@drawable/person_24"
+        android:iconTint="@color/teal_700"
+        android:title="About" />
+
+
+
+
+
+</menu>

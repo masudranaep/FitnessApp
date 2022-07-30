@@ -1,0 +1,1128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundc"
+    android:orientation="vertical"
+    tools:context="com.fitplace.fitnessapp.Heavier.HeaverDiet">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#283370"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/backpassweight"
+                android:onClick="Backpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icback_24"
+                android:layout_marginTop="10dp"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Heavier Diet"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="serif"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+            <LinearLayout
+                android:id="@+id/empty"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="410dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/mandink"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/waterdink"
+                                app:civ_border_color="@color/white"
+                                app:civ_border_width="2dp"
+                                app:civ_circle_background_color="@color/white"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#DCD1D1"
+                                android:layout_marginLeft="12dp"
+                                android:text="( Empty Stomach )"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp">
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1">
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="330dp"
+                            android:orientation="vertical">
+                            <EditText
+                                android:layout_width="2dp"
+                                android:layout_height="330dp"
+                                android:background="#EA2525"
+                                android:layout_marginLeft="23dp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="340dp"
+                            android:layout_height="330dp"
+                            app:cardBackgroundColor="#283370"
+                            app:cardElevation="7dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="--Half Lemon"
+                                    android:textStyle="bold"
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="--One Spoon Ginger"
+                                    android:textColor="#D4EAF4"
+                                    android:textStyle="bold"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="--One Spoon Honey"
+                                    android:textStyle="bold"
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="--Warm Water"
+                                    android:textStyle="bold"
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="It will also detox you"
+                                    android:textColor="#D4EAF4"
+                                    android:textStyle="bold"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginTop="130dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="RECIPE:"
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1.Heat one glass of water until it is boiled."
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2.One the water is ready,add a small slice of ginger and let it steep for 5 minutes,covered."
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3.After 5 minutes."
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4.add the juice of one lemon,add one spoon honey and drink"
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/empty2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="410dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/mandink2"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/breakfast"
+                                app:civ_border_color="@color/white"
+                                app:civ_border_width="2dp"
+                                app:civ_circle_background_color="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#DCD1D1"
+                                android:layout_marginLeft="12dp"
+                                android:text="( BreakFast )"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp">
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1">
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="330dp"
+                            android:orientation="vertical">
+                            <EditText
+                                android:layout_width="2dp"
+                                android:layout_height="330dp"
+                                android:background="#EA2525"
+                                android:layout_marginLeft="23dp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="340dp"
+                            android:layout_height="330dp"
+                            app:cardBackgroundColor="#283370"
+                            app:cardElevation="7dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="--One cup Oats"
+                                    android:textStyle="bold"
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="--One Apple"
+                                    android:textStyle="bold"
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="--Half head -dry fruits"
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginTop="90dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="RECIPE:"
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="1.One cup plain oats"
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="2.Cups water In a medium saucepan,bring 2 cup"
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3.Stir in 1 cup oats.Reduce head and simmer"
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4.Remove the saucepan from the head when very less water remains."
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="4.You can also add Whey Protien.Or You can add honey and milk in oats for taste.."
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/empty3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="410dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/mandink3"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/lunch2"
+                                app:civ_border_color="@color/white"
+                                app:civ_border_width="2dp"
+                                app:civ_circle_background_color="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#DCD1D1"
+                                android:layout_marginLeft="12dp"
+                                android:text="( Lunch )"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="37dp">
+
+
+                        <com.google.android.ads.nativetemplates.TemplateView
+                            android:id="@+id/my_template"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:gnt_template_type="@layout/gnt_small_template_view" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="260dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="300dp"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:layout_width="2dp"
+                                android:layout_height="280dp"
+                                android:layout_marginLeft="23dp"
+                                android:background="#EA2525" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="330dp"
+                            android:layout_height="250dp"
+                            app:cardBackgroundColor="#283370"
+                            app:cardCornerRadius="10dp"
+                            app:cardElevation="7dp"
+                            app:cardUseCompatPadding="true">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="80dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:fontFamily="monospace"
+                                    android:text="--Spinach"
+                                    android:textColor="#D4EAF4"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:fontFamily="monospace"
+                                    android:text="--One Cucumber"
+                                    android:textColor="#D4EAF4"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:fontFamily="monospace"
+                                    android:text="--One Carrot"
+                                    android:textColor="#D4EAF4"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="93dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:fontFamily="monospace"
+                                    android:text="RECIPE:"
+                                    android:textColor="#D4EAF4" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:fontFamily="monospace"
+                                    android:text="Mixture can be 1-2 cups."
+                                    android:textColor="#D4EAF4" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:fontFamily="monospace"
+                                    android:text="You can have them rawcgopped or"
+                                    android:textColor="#D4EAF4" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:fontFamily="monospace"
+                                    android:text="can boil for 5 minutes on low flame. You can"
+                                    android:textColor="#D4EAF4" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="20dp"
+                                    android:fontFamily="monospace"
+                                    android:text="also add black pepper for taste."
+                                    android:textColor="#D4EAF4" />
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/empty4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="410dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/mandink4"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/greentea"
+                                app:civ_border_color="@color/white"
+                                app:civ_border_width="2dp"
+                                app:civ_circle_background_color="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#DCD1D1"
+                                android:layout_marginLeft="12dp"
+                                android:text="( Evening )"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="140dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp">
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1">
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="330dp"
+                            android:orientation="vertical">
+                            <EditText
+                                android:layout_width="2dp"
+                                android:layout_height="300dp"
+                                android:background="#EA2525"
+                                android:layout_marginLeft="23dp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="340dp"
+                            android:layout_height="130dp"
+                            app:cardBackgroundColor="#283370"
+                            app:cardElevation="7dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="20dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="--One cup Green Tea"
+                                    android:textColor="#D4EAF4"
+                                    android:textStyle="bold"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="It will also gives you glowing skin."
+                                    android:textColor="#D4EAF4"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+
+
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/empty5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_marginBottom="20dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="410dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/mandink5"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/dinner"
+                                app:civ_border_color="@color/white"
+                                app:civ_border_width="2dp"
+                                app:civ_circle_background_color="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#DCD1D1"
+                                android:layout_marginLeft="12dp"
+                                android:text="( Dinner )"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginRight="30dp"-->
+<!--                        android:layout_marginLeft="37dp">-->
+
+
+<!--                        <com.google.android.ads.nativetemplates.TemplateView-->
+<!--                            android:id="@+id/my_template2"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            app:gnt_template_type="@layout/gnt_small_template_view" />-->
+<!--                    </RelativeLayout>-->
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp">
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="200dp"
+                        android:orientation="horizontal"
+                        android:layout_weight="1">
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="330dp"
+                            android:orientation="vertical">
+                            <EditText
+                                android:layout_width="2dp"
+                                android:layout_height="200dp"
+                                android:background="#EA2525"
+                                android:layout_marginLeft="23dp"/>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="180dp"
+                        android:orientation="vertical"
+                        android:layout_weight="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="340dp"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="#283370"
+                            app:cardElevation="7dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="--Four Egg Whites"
+                                    android:textColor="#D4EAF4"
+                                    android:textStyle="bold"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="--One Glass Milk"
+                                    android:textStyle="bold"
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="70dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="RECIPE:"
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Only eat white part of eggs not yellow"
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Use double toned milk if possible"
+                                    android:textColor="#D4EAF4"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+
+
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/empty6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="410dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/mandink6"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:src="@drawable/greentea"
+                                app:civ_border_color="@color/white"
+                                app:civ_border_width="2dp"
+                                app:civ_circle_background_color="@color/white" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:textColor="#DCD1D1"
+                                android:layout_marginLeft="12dp"
+                                android:text="( Before Bed )"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:orientation="horizontal">
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dp">
+
+                    <LinearLayout
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1">
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginBottom="80dp"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:orientation="vertical"
+                        android:layout_weight="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="340dp"
+                            android:layout_height="120dp"
+                            app:cardBackgroundColor="#283370"
+                            app:cardElevation="7dp"
+                            app:cardUseCompatPadding="true"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="100dp"
+                                android:layout_marginTop="10dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="--One cup Green Tea"
+                                    android:textColor="#D4EAF4"
+                                    android:textStyle="bold"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="it will also gives you glowing skin"
+                                    android:textColor="#D4EAF4"
+                                    android:layout_marginTop="20dp"
+                                    android:fontFamily="monospace"
+                                    android:layout_marginLeft="20dp"/>
+
+
+                            </LinearLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+<!--        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--            android:id="@+id/adView"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            ads:adSize="BANNER"-->
+<!--            ads:adUnitId="ca-app-pub-6814304072623948/2822491961">-->
+
+<!--        </com.google.android.gms.ads.AdView>-->
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

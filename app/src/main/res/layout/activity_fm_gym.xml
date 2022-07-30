@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D8DFF6"
+    tools:context="com.fitplace.fitnessapp.FmGYM.FmGym">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/fmbackgroundcolor">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="12dp"
+                android:layout_marginBottom="5dp"
+                app:cardElevation="9dp">
+                <ImageView
+                    android:onClick="Backpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icback_24"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="7dp"
+                    app:tint="#3E7FFF" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="2">
+
+       <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="New Famous Gym"
+          android:textStyle="bold"
+          android:textSize="25dp"
+           android:fontFamily="monospace"
+          android:layout_marginLeft="1dp"
+          android:textColor="#3E7FFF"
+           android:layout_marginTop="25dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/fmlocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:cardBackgroundColor="#FFFF"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="12dp"
+                android:layout_marginBottom="5dp"
+                app:cardElevation="9dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_add_location_24"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="8dp"
+                    app:tint="#3E7FFF" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:queryHint="Search Here"
+            android:layout_margin="10dp"
+            android:background="@drawable/fm_searchcolor"
+            app:iconifiedByDefault="false"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="0dp"/>
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                app:cardBackgroundColor="#FFFF"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="12dp"
+                android:layout_marginBottom="5dp"
+                app:cardElevation="9dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Routine"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:textColor="#3E7FFF"
+                    android:fontFamily="monospace"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="12dp"/>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:onClick="fmContact"
+                app:cardBackgroundColor="#FFFF"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="12dp"
+                android:layout_marginBottom="5dp"
+                app:cardElevation="9dp">
+
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="monospace"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="12dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="110dp"
+                android:layout_height="50dp"
+                android:onClick="fmPersonal"
+                app:cardBackgroundColor="#FFFF"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="12dp"
+                android:layout_marginBottom="5dp"
+                app:cardElevation="9dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="monospace"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/strongman"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Beginner"
+    android:textColor="#3E7FFF"
+    android:textSize="25dp"
+    android:fontFamily="monospace"
+    android:textStyle="bold"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="30dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:onClick="Fm_oneRoutine"
+                    android:background="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Particulars"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="monospace"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#3ECCFD"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SP: ROUTINE (1)"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:fontFamily="monospace"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="@color/black"/>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:onClick="Fm_tworoutibe"
+                    android:background="@color/white"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="9dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Particulars"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:fontFamily="monospace"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="#3ECCFD"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SP: ROUTINE (2,3)"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:fontFamily="monospace"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginLeft="30dp"
+                        android:textColor="@color/black"/>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/fmm"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Intermediate"
+                            android:textColor="#3E7FFF"
+                            android:textSize="25dp"
+                            android:fontFamily="monospace"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="30dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:onClick="Fm_foreRoutine"
+                        android:layout_marginBottom="15dp"
+                        android:background="@color/white"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="9dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Particulars"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="monospace"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="#3ECCFD"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SP: ROUTINE (4)"
+                            android:textSize="22dp"
+                            android:textStyle="bold"
+                            android:fontFamily="monospace"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="@color/black"/>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                                    <com.google.android.ads.nativetemplates.TemplateView
+                                        android:id="@+id/my_template"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:gnt_template_type="@layout/gnt_small_template_view" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:onClick="Fm_fiveroutibe"
+                        android:background="@color/white"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="9dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Particulars"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="monospace"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="#3ECCFD"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SP: ROUTINE (5)"
+                            android:textSize="22dp"
+                            android:textStyle="bold"
+                            android:fontFamily="monospace"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="@color/black"/>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="20dp"
+                        android:onClick="Fm_sixRoutine"
+                        android:background="@color/white"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="9dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Particulars"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="monospace"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="#3ECCFD"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SP: ROUTINE (6)"
+                            android:textSize="22dp"
+                            android:textStyle="bold"
+                            android:fontFamily="monospace"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="@color/black"/>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:onClick="Fm_sevenroutibe"
+                        android:background="@color/white"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="9dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Particulars"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="monospace"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="#3ECCFD"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SP: ROUTINE (7)"
+                            android:textSize="22dp"
+                            android:textStyle="bold"
+                            android:fontFamily="monospace"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="@color/black"/>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+
+
+<!--                     Lose weight-->
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/fmloseweight"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"/>
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_marginTop="0dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Lose Weight"
+                            android:textColor="#3E7FFF"
+                            android:textSize="25dp"
+                            android:fontFamily="monospace"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="30dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:onClick="Fm_fatOneRoutine"
+                        android:background="@color/white"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="9dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Particulars"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="monospace"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="#3ECCFD"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SP: Fat (1)"
+                            android:textSize="22dp"
+                            android:textStyle="bold"
+                            android:fontFamily="monospace"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="@color/black"/>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:onClick="Fm_fateTworoutibe"
+                        android:background="@color/white"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="9dp">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Particulars"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="monospace"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="#3ECCFD"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SP: Fat (2)"
+                            android:textSize="22dp"
+                            android:textStyle="bold"
+                            android:fontFamily="monospace"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="@color/black"/>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="10dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/fmleg"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"/>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Intermediate"
+                            android:textColor="#3E7FFF"
+                            android:textSize="25dp"
+                            android:fontFamily="monospace"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="30dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="vertical">
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginBottom="100dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:onClick="Fm_LegRoutine"
+                        android:background="@color/white"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="9dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Particulars"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:fontFamily="monospace"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="#3ECCFD"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SP: Legs WorkOut"
+                            android:textSize="22dp"
+                            android:textStyle="bold"
+                            android:fontFamily="monospace"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginLeft="30dp"
+                            android:textColor="@color/black"/>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-6814304072623948/2822491961">
+
+            </com.google.android.gms.ads.AdView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

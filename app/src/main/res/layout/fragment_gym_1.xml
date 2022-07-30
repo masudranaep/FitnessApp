@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundc"
+    tools:context="com.fitplace.fitnessapp.DayFragment.FragmentGym_1">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dp"
+                android:orientation="vertical"
+                android:layout_marginTop="0dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="7dp"
+                    app:cardBackgroundColor="#283370" >
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="140dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical" >
+
+                            <Button
+                                android:id="@+id/walkingspot"
+                                android:layout_width="240dp"
+                                android:layout_height="50dp"
+                                android:text="Walking on the Spot"
+                                android:textSize="16dp"
+                                android:textColor="#CDDC39"
+                                android:backgroundTint="#2A2E30"/>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="serif"
+                                android:padding="5dp"
+                                android:layout_marginLeft="7dp"
+                                android:text="Days 1"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="#ffff"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:layout_marginLeft="7dp"
+                                android:text="Every Day 5 Min"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0"
+                            >
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:src="@drawable/juging"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:src="@drawable/arrow_right"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dp"
+                android:orientation="vertical"
+                android:layout_marginTop="0dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="7dp"
+                    app:cardBackgroundColor="#283370">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/jogging"
+                                android:layout_width="250dp"
+                                android:layout_height="50dp"
+                                android:text="Jogging Circlers"
+                                android:textSize="16dp"
+                                android:textColor="#CDDC39"
+                                android:backgroundTint="#2A2E30"/>
+                            <!--                        <TextView-->
+                            <!--                            android:layout_width="wrap_content"-->
+                            <!--                            android:layout_height="wrap_content"-->
+                            <!--                            android:fontFamily="monospace"-->
+                            <!--                            android:text="Jpgging Circles"-->
+                            <!--                            android:textSize="18dp"-->
+                            <!--                            android:textStyle="bold"-->
+                            <!--                            android:padding="5dp"-->
+                            <!--                            android:layout_marginLeft="7dp"-->
+                            <!--                            android:textColor="#CDDC39"/>-->
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="serif"
+                                android:padding="5dp"
+                                android:layout_marginLeft="7dp"
+                                android:text="Days 1"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="#ffff" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:layout_marginLeft="7dp"
+                                android:text="Every Day 5 Min"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0"
+                            >
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:src="@drawable/juging"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:src="@drawable/arrow_right"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dp"
+                android:orientation="vertical"
+                android:layout_marginTop="15.0dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="7dp"
+                    app:cardBackgroundColor="#283370">
+                    <LinearLayout
+                        android:id="@+id/sidejumps"
+                        android:onClick="SideJumps"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+
+                            <Button
+                                android:id="@+id/sidejump"
+                                android:layout_width="250dp"
+                                android:layout_height="50dp"
+                                android:text="Side Jumps"
+                                android:textSize="16dp"
+                                android:textColor="#CDDC39"
+                                android:backgroundTint="#2A2E30"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="serif"
+                                android:padding="5dp"
+                                android:layout_marginLeft="7dp"
+                                android:text="Days 1"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="#ffff"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:layout_marginLeft="7dp"
+                                android:text="Every Day 8 Min"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0"
+                            >
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:src="@drawable/sidejump"
+                                />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:src="@drawable/arrow_right"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dp"
+                android:orientation="vertical"
+                android:layout_marginTop="15.0dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="7dp"
+                    app:cardBackgroundColor="#283370">
+                    <LinearLayout
+                        android:id="@+id/wallpushups"
+                        android:onClick="wallpush"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+
+                            <Button
+                                android:id="@+id/wallpushupss"
+                                android:layout_width="250dp"
+                                android:layout_height="50dp"
+                                android:text="Wall Push Ups"
+                                android:textSize="16dp"
+                                android:textColor="#CDDC39"
+                                android:backgroundTint="#2A2E30"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="serif"
+                                android:padding="5dp"
+                                android:layout_marginLeft="7dp"
+                                android:text="Days 1"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="#ffff"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:layout_marginLeft="7dp"
+                                android:text="Every Day 15 * 4  set"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0"
+                            >
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:src="@drawable/wallpush"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:src="@drawable/arrow_right"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10.0dp"
+                android:orientation="vertical"
+                android:layout_marginTop="15.0dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="fill_parent"
+                    android:layout_height="170dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardUseCompatPadding="true"
+                    app:cardElevation="7dp"
+                    app:cardBackgroundColor="#283370">
+                    <LinearLayout
+                        android:id="@+id/degreejumps"
+                        android:onClick="DegreeJumps"
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/degreejump"
+                                android:layout_width="250dp"
+                                android:layout_height="50dp"
+                                android:backgroundTint="#2A2E30"
+                                android:text="360 Degree Jumps"
+                                android:textColor="#CDDC39"
+                                android:textSize="16dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="serif"
+                                android:padding="5dp"
+                                android:layout_marginLeft="7dp"
+                                android:text="Days 1"
+                                android:textSize="20dp"
+                                android:textStyle="bold"
+                                android:textColor="#ffff"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="5dp"
+                                android:layout_marginLeft="7dp"
+                                android:text="Every Day 100 jumps"
+                                android:textColor="@color/white"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.0"
+                            >
+                            <pl.droidsonroids.gif.GifImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="90dp"
+                                android:src="@drawable/degreejumps"
+                                />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.0">
+
+                            <ImageView
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:src="@drawable/arrow_right"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</FrameLayout>

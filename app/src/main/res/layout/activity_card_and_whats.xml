@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="#505145"
+
+    android:layout_width="match_parent"
+    android:id="@+id/cardandwhats"
+    android:layout_height="match_parent"
+    tools:context="com.fitplace.fitnessapp.Lose.CardAndWhats">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/addcardbackpass"
+                android:onClick="backpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icback_24"
+                android:layout_marginTop="14dp"
+                app:tint="@color/white" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffff"
+                android:text="Add creadit or debit card"
+                android:textSize="22dp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="130dp">
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/textinputlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Card Number"
+        app:startIconDrawable="@drawable/card"
+        app:helperText="Required*"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        android:textColorHint="@color/white"
+        app:errorEnabled="true"
+        app:endIconMode="custom"
+        app:helperTextTextColor="@color/white"
+        app:prefixText=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textinputEditText"
+            android:layout_width="fill_parent"
+            android:inputType="number"
+            android:layout_height="wrap_content">
+            
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="fill_parent"
+        android:layout_height="130dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/Whatstextinputlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColorHint="@color/white"
+            android:hint="What's Number"
+            app:startIconDrawable="@drawable/ic_baseline_phone_24"
+            app:helperText="Required*"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:errorEnabled="true"
+            app:endIconMode="custom"
+            app:helperTextTextColor="@color/white"
+            app:prefixText=""
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/whatstextinputEditText"
+                android:layout_width="fill_parent"
+                android:inputType="number"
+                android:layout_height="wrap_content">
+
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="230dp">
+       <Button
+           android:layout_width="fill_parent"
+           android:layout_height="10dp"
+           android:backgroundTint="#6F7068"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
+         <LinearLayout
+             android:layout_width="200dp"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+             <Button
+                 android:id="@+id/cardadd"
+                 android:layout_width="fill_parent"
+                 android:layout_height="50dp"
+                 android:layout_marginRight="5dp"
+                 android:layout_marginLeft="5dp"
+                 android:text="Add Card"
+                 app:icon="@drawable/card"
+                 android:backgroundTint="#505145"/>
+
+         </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/whatsadd"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text=" Add What's"
+                    android:backgroundTint="#505145"
+                    app:icon="@drawable/ic_baseline_phone_24"/>
+
+            </LinearLayout>
+
+                </LinearLayout>
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+<!--                android:id="@+id/adView"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                ads:adSize="BANNER"-->
+<!--                ads:adUnitId="ca-app-pub-6814304072623948/2822491961">-->
+
+<!--            </com.google.android.gms.ads.AdView>-->
+<!--        </RelativeLayout>-->
+
+            </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

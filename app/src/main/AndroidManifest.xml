@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.fitnessapp">
+
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.FitnessApp">
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.HealYour.UlcerPro"
+            android:exported="true" />
+
+        <activity
+            android:name="com.fitplace.fitnessapp.Lose.PrivacyPolicy"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.Fm_Contact"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Potato"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.GreenPeas"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.MenuItem.MyContact"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Apricot"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Basil"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Caromseeds"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.ChamomileTea"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Onion"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Spinach"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.NonVege.Salmon"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Pears"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Strawberry"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Quince"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.PineApple"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Mango"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Jackfruit"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Guava"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Cherry"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.ImmunityBost.Mushroom"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.ImmunityBost.Orange"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.ImmunityBost.Lima"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.ImmunityBost.Tangerine"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.ImmunityBost.Walnuts"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.ImmunityBost.GreenTea"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.ImmunityBost.Acaiberry"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.BestFood.Raspberry"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.BestFood.SweetPototo"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.BestFood.Ginger"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Blueberries"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Tomato"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Pumpkin"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Legs.Fm_LegsideStretch"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Legs.Fm_LegfrontStrech"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Abs"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Shoulder.Fm_Shrugs"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Arms.Fm_Cablecurl"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Legs.Fm_LegsCalfraise"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.ArmsSideStrech"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Flabby.FlabbyTwo"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Flabby.FlabbyOne"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Legs.Fm_Deadlift"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Legs.Fm_Hacksquat"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Legs.Fm_Legspress"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Legs.Fm_Splisquat"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Legs.Fm_LegsCurl"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Legs.Fm_Legsex"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Shoulder.Fm_Machineshol"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Shoulder.Fm_Frontraiseshol"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Shoulder.Fm_Dumbbelpressshol"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Shoulder.Fm_Uprightrows"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Shoulder.Fm_Singlecableshol"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Shoulder.Fm_MilitariPress"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Shoulder.Fm_BentletShol"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Shoulder.Fm_Arnoldpress"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Arms.Fm_InclineBarbellCurl"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Chest.Fm_Warmap"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Arms.Fm_Kick"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Arms.Fm_BarbellEx"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Arms.FmRopepushd"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Arms.FmEzbarEx"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Arms.FmRrvespush"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Arms.Fm_Barbellcurl"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Arms.Fm_Precarcurl"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Arms.Fm_Concestcurl"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Chest.Fm_pulloverchest"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Chest.Fm_Cablefly"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Chest.Fm_PecDeckfly"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Chest.Fm_Incline"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Chest.Fm_Banchpress"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Back.Fm_Vbarlatpulldown"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Back.Fm_Dumbbellrow"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Back.Fm_BendOverrow"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Back.Fm_SeatedCable"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Back.Fm_BackPulley"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Back.Fm_ChinUp"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.Fat.Fm_FatTwo"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.Fat.Fm_FatOne"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Back.Ideal_Chest"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.part.Fm_SavenPart"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.part.Fm_Sixpart"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.part.Fm_Fivepart"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.part.Fm_Fourpart"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.five.Fm_SevenpartThree"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.five.Fm_SevenpartTwo"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.five.Fm_SevenpartOne"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.five.Fm_SixpartTwo"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.five.Fm_SixpartOne"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.five.Fm_FivepartTwo"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.five.Fm_FivepartOne"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.fourNo.Fm_FourParttwo"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.fourNo.Fm_FourPartone"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.Fm_Tworoutine"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Arms.Fm_FrontPress"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Chest.Fm_D_Fly"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Chest.Fm_Dips"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Arms.Fm_ForeArms"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Arms.Fm_TricepStand"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Arms.Fm_BricepCurl"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Arms.Fm_ArmsWork"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Legs.Fm_LegsSquat"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Arms.Fm_TricepPulley"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Arms.Fm_Hammercurl"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Fm_ArmsSideraise"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Fm_ArmsFrontraise"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Chest.Fm_D_Press"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Chest.Fm_PushUp"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Fm_Stretching"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Fm_FrontBend"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Fm_SideBend"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Fm_SideTwisting"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.One.Jogging"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.FmOneroutine"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FmGYM.FmGym"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.BestFood.Garlic"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Papaya"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Kiwi"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Lemon"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Durian"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Elderberry"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Pomegrante"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Watermelon"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Grape"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Avocado"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.NonVege.Prawns"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.NonVege.Octopus"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.NonVege.Duck"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.NonVege.Mutton"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.HealYour.KidneyStone"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.HealYour.KidneyDetox"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.HealYour.Indigestion"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.HealYour.HighBP"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.HealYour.Hangover"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.HealYour.Depression"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.HealYour.MemoryLoss"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-6814304072623948~1829631038" />
+
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.HealYour.Asthma"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.HealYour.SkinCare"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.HealYour.Nails"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.HealYour.LongerHair"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Dates"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.BestFood.WorldFoods"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.ImmunityBost.ImmunityBoost"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.HealYour.HealYourBody"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.NonVege.Non_Vege"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Fruits"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Banana"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Almonds"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Fruits.Apple"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.NonVege.Egg"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.NonVege.Beef"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.NonVege.Fish"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.NonVege.Chicken"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Carrots"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Cuumber"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Cabbage"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Broccoli"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Brinjal"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.BottleGourd"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.BitterGourd"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Bellpepper"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Beetroot"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Basella"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.CauliFlower"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Mustard"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.LimaBeans"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Asparagus"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Amaranthus"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.Vagetable.Vegetable"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Neutrition.NutritionFacts"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Skinny.SkinnyDeit"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Back.Idealbody_Diet"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Flabby.FlabbyDite"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Heavier.HeaverDiet"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.MenuItem.Home"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Heavier.HeavierGym_type"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Heavier.HeaverWeight"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Flabby.FlabbyGym_type"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Flabby.FlabbyWeight"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Skinny.SkinnyWhatappAdd"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Skinny.Two_RoutineGym"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Skinny.OneRoutineGym"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Skinny.Skinny_GymType"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Skinny.SkinnyYear"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Back.LegsWorkout"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Back.TricepWorkout"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Back.ShoulderWorkout"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Back.ArmsWorkout"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Back.BackWorkout"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Back.Gym_type"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Gain.SkinnyYears"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Gain.Body_Type"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Lose.CardAndWhats"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Lose.BMI_Result"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Lose.BMI_Calculater"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Lose.Tips"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Time.TimeWorkout"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.AllDay.DaySaven"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.AllDay.DaySix"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.AllDay.DayFive"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.AllDay.DayFour"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.AllDay.DayThree"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.AllDay.DayTwo"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.AllDay.DayOne"
+            android:exported="true" />
+        <activity
+            android:name="com.fitplace.fitnessapp.Lose.LossWeight"
+            android:exported="true" />
+        <activity android:name="com.fitplace.fitnessapp.MainActivity" />
+        <activity
+            android:name="com.fitplace.fitnessapp.FontPage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

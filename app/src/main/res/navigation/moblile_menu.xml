@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    app:startDestination="@id/homefragment"
+    android:id="@+id/moblile_menu">
+
+
+    <fragment android:id="@+id/homefragment"
+        android:label="Home"
+        android:name="com.fitplace.fitnessapp.Fragment.HomeFragment"
+        tools:layout="@layout/fragment_home"/>
+
+
+
+    <fragment android:id="@+id/rankfragment"
+        android:label="Online"
+        android:name="com.fitplace.fitnessapp.Fragment.OnlineFragment"
+        tools:layout="@layout/fragment_online"/>
+
+
+    <fragment android:id="@+id/workoutfragment"
+        android:label="Home Workout"
+        android:name="com.fitplace.fitnessapp.Fragment.LavelFragment"
+        tools:layout="@layout/fragment_lavel"/>
+
+
+    <fragment android:id="@+id/profilefragment"
+        android:label="About"
+        android:name="com.fitplace.fitnessapp.Fragment.ProfileFragment"
+        tools:layout="@layout/fragment_profile"/>
+
+
+
+</navigation>
